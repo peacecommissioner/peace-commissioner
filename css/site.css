@@ -168,6 +168,11 @@ main.page-main {
   border-radius: 4px;
 }
 
+#section-contact .contact-left .contact-address-line {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
 @media (max-width: 479px) {
   .profile-cta .profile-cta-primary {
     margin-left: 0;
