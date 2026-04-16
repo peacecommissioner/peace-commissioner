@@ -1,0 +1,235 @@
+/* Multi-page site layer */
+
+.site-header {
+  position: relative;
+  z-index: 10000;
+}
+
+.section-menu {
+  z-index: 10000;
+}
+
+.page-masthead {
+  background: linear-gradient(
+    135deg,
+    var(--exec-hero-deep) 0%,
+    #1e293b 50%,
+    #1e3a5f 100%
+  );
+  color: #f8fafc;
+  padding: 2.75rem 0 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.page-masthead h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  margin: 0.5rem 0 0.75rem;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.page-masthead-lead {
+  font-size: var(--fs-body);
+  color: rgba(226, 232, 240, 0.92);
+  max-width: 40rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.breadcrumb-site {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.breadcrumb-site a {
+  color: rgba(147, 197, 253, 0.95);
+  text-decoration: none;
+}
+
+.breadcrumb-site a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.breadcrumb-site span[aria-hidden="true"] {
+  color: rgba(148, 163, 184, 0.8);
+  margin: 0 0.35rem;
+}
+
+.breadcrumb-site .current {
+  color: rgba(226, 232, 240, 0.85);
+}
+
+main.page-main {
+  min-height: 45vh;
+}
+
+.home-highlights {
+  background: var(--exec-bg);
+  border-top: 1px solid var(--exec-border);
+}
+
+.home-highlights .heading-title {
+  margin-bottom: 0.5rem;
+}
+
+.home-card {
+  display: block;
+  height: 100%;
+  padding: 1.75rem 1.5rem;
+  background: var(--exec-surface);
+  border: 1px solid var(--exec-border);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-card:hover {
+  border-color: var(--exec-accent);
+  box-shadow: 0 8px 24px rgba(29, 78, 216, 0.12);
+}
+
+.home-card h3 {
+  font-size: 1.125rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--exec-ink);
+}
+
+.home-card p {
+  margin: 0;
+  font-size: var(--fs-body);
+  color: var(--exec-muted);
+}
+
+.home-card .home-card-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--exec-accent);
+}
+
+.home-card .fa {
+  margin-right: 0.5rem;
+  color: var(--exec-accent);
+}
+
+.home-cta-band {
+  background: var(--exec-surface);
+  border-top: 1px solid var(--exec-border);
+  text-align: center;
+}
+
+.home-cta-band p {
+  max-width: 36rem;
+  margin: 0 auto 1.25rem;
+  font-size: var(--fs-lead);
+}
+
+.resume-section-gap {
+  margin-top: 3rem;
+}
+
+.home-explore-lead {
+  margin-bottom: 2rem;
+}
+
+.home-grid-col {
+  margin-bottom: 1.25rem;
+}
+
+.profile-cta {
+  margin-top: 1.5rem;
+}
+
+.profile-cta .profile-cta-primary {
+  margin-left: 0.5rem;
+}
+
+.contact-config-warning {
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  color: #92400e;
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact-config-warning code {
+  font-size: 0.88em;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 479px) {
+  .profile-cta .profile-cta-primary {
+    margin-left: 0;
+    margin-top: 0.75rem;
+    display: inline-block;
+  }
+}
+
+/* Thank-you + 404 utility pages */
+
+.utility-section {
+  padding: 4rem 1rem 5rem;
+  background: var(--exec-bg);
+  border-top: 1px solid var(--exec-border);
+}
+
+.utility-panel {
+  max-width: 32rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5rem 1.75rem;
+  background: var(--exec-surface);
+  border: 1px solid var(--exec-border);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+}
+
+.utility-panel .utility-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--exec-ink);
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.utility-code {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--exec-accent);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.04em;
+}
+
+.utility-panel p {
+  margin: 0 0 1.5rem;
+  color: var(--exec-muted);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+}
+
+.utility-actions .btn {
+  margin: 0.35rem;
+}
+
+@media (max-width: 767px) {
+  .page-masthead {
+    padding: 2rem 0 1.75rem;
+  }
+
+  .utility-section {
+    padding: 2.5rem 1rem 3rem;
+  }
+}
